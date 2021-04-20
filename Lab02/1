@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "Nhap n"
+read number
+while [ "$number" -le 10 ];do
+    read number
+done
+sum=0
+for ((i=1;i<=number;i++)) 
+do
+    sum=$((sum + i))
+done
+echo $sum
